@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { html, css, js, react } from "./data";
+import { Link } from "react-router-dom";
 
 function Plans(props) {
   return (
@@ -27,13 +28,13 @@ function Plans(props) {
           <div className="accordion-body">
             <div class="list-group">
               {html.map((value, i) => (
-                <a
-                  href={value}
+                <Link
+                  to={value.replace(/ /g, "") }
                   class="list-group-item list-group-item-action "
                   aria-current="true"
                 >
                   {i + 1} - {value}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
