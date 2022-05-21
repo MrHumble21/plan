@@ -11019,3 +11019,8 @@ body{
 background-repeat: no-repeat !important;
 min-height: 100vh !important;
 }
+
+
+#google_translate_element > div > span > a{
+display:none !important;
+}
