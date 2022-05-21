@@ -7,7 +7,10 @@ import Plans from "./Plans";
 function Main() {
   return (
     <>
-    <Navbar />
+      <Navbar />
+      <div className="container">
+        <div id="google_translate_element"></div>
+      </div>
       <div className="container  mt-5">
         <Message />
       </div>
