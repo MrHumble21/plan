@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { html, css , js, react } from "./data";
+import { html, css, js, react } from "./data";
 
 function Plans(props) {
   return (
@@ -20,7 +20,7 @@ function Plans(props) {
         </h2>
         <div
           id="collapseOne"
-          className="accordion-collapse collapse show"
+          className="accordion-collapse collapse "
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
@@ -28,7 +28,7 @@ function Plans(props) {
             <div class="list-group">
               {html.map((value, i) => (
                 <a
-                  href="#"
+                  href={value}
                   class="list-group-item list-group-item-action "
                   aria-current="true"
                 >
@@ -59,15 +59,15 @@ function Plans(props) {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-          {css.map((value, i) => (
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action "
-                  aria-current="true"
-                >
-                  {i + 1} - {value}
-                </a>
-              ))}
+            {css.map((value, i) => (
+              <a
+                href="#"
+                class="list-group-item list-group-item-action "
+                aria-current="true"
+              >
+                {i + 1} - {value}
+              </a>
+            ))}
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ function Plans(props) {
             aria-expanded="false"
             aria-controls="collapseThree"
           >
-         JavaScript
+            JavaScript
           </button>
         </h2>
         <div
@@ -91,19 +91,18 @@ function Plans(props) {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-          {js.map((value, i) => (
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action "
-                  aria-current="true"
-                >
-                  {i + 1} - {value}
-                </a>
-              ))}
+            {js.map((value, i) => (
+              <a
+                href="#"
+                class="list-group-item list-group-item-action "
+                aria-current="true"
+              >
+                {i + 1} - {value}
+              </a>
+            ))}
           </div>
         </div>
       </div>
-
 
       <div className="accordion-item">
         <h2 className="accordion-header" id="headingFour">
@@ -115,7 +114,7 @@ function Plans(props) {
             aria-expanded="false"
             aria-controls="collapseFour"
           >
-        React
+            React
           </button>
         </h2>
         <div
@@ -125,15 +124,15 @@ function Plans(props) {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-          {react.map((value, i) => (
-                <a
-                  href="#"
-                  class="list-group-item list-group-item-action "
-                  aria-current="true"
-                >
-                  {i + 1} - {value}
-                </a>
-              ))}
+            {react.map((value, i) => (
+              <a
+                href="#"
+                class="list-group-item list-group-item-action "
+                aria-current="true"
+              >
+                {i + 1} - {value}
+              </a>
+            ))}
           </div>
         </div>
       </div>
