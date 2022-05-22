@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { html, css, js, react } from "./data";
-import { Link } from "react-router-dom";
+import { Link , Navigate} from "react-router-dom";
 
 function Plans(props) {
   return (
